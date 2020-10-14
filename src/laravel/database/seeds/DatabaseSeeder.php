@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        //prefsのseederで初期の都道府県を呼び込む。
+        $this->call(prefsTableSeeder::class);
     }
 }

@@ -11,6 +11,8 @@ class CreatePrefsTable extends Migration
      *
      * @return void
      */
+
+    //都道府県のテーブル設計
     public function up()
     {
         Schema::create('prefs', function (Blueprint $table) {
