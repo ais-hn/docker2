@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\CustomersController;
+
+//indexファイルの表示
+Route::get('/','CustomersController@index');
+

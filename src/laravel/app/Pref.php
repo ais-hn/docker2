@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pref extends Model
 {
-    //
+    protected $fillable = ['name'];
 }

@@ -15,6 +15,8 @@ class PrefsTableSeeder extends Seeder
 
      //初期値で都道府県をseedingする。
     public function run(){
+
+    // データ挿入
         $prefs = [
             '北海道',
             '青森県',
@@ -25,6 +27,7 @@ class PrefsTableSeeder extends Seeder
             '福島県',
             '茨城県',
             '栃木県',
+            '群馬県',
             '埼玉県',
             '千葉県',
             '東京都',
@@ -65,9 +68,9 @@ class PrefsTableSeeder extends Seeder
         ];
 
         foreach ($prefs as $pref) {
-            DB::table('prefs')->insert([
-            'name' => 'pref'
-                ]);
+            DB::table('prefs')->insert(
+                ['name' => 'pref']
+            );
     }
   }
 }

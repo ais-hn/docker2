@@ -16,7 +16,7 @@ class CreateCustomersTable extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
-            $table->bigInteger('id')->primary()->unsigned()->autoIncrement()->comment('ID');
+            $table->bigInteger('id')->unsigned()->autoIncrement()->comment('ID');
             $table->string('last_name',255)->comment('姓');
             $table->string('first_name',255)->comment('名');
             $table->string('last_kana',255)->comment('姓かな');
@@ -41,6 +41,9 @@ class CreateCustomersTable extends Migration
             $table->text('remarks')->nullable()->comment('備考');
             $table->timestamp('created_at')->useCurrent()->comment('作成日時');
             $table->timestamp('updated_at')->useCurrent()->comment('更新日時');
+
+            //プライマリーキー設定
+            //$table->primary('id');
         });
     }
 

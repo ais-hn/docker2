@@ -23,3 +23,33 @@ namespace App{
 	class User extends \Eloquent {}
 }
 
+namespace App{
+/**
+ * App\Customer
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Customer newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Customer newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Customer query()
+ */
+	class Customer extends \Eloquent {}
+}
+
+namespace App{
+/**
+ * App\Pref
+ *
+ * @property int $id ID
+ * @property string $name 都道府県名
+ * @property \Illuminate\Support\Carbon $created_at 作成日時
+ * @property \Illuminate\Support\Carbon $updated_at 更新日時
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Pref whereUpdatedAt($value)
+ */
+	class Pref extends \Eloquent {}
+}
+
